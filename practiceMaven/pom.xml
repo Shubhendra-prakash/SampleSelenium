@@ -22,6 +22,25 @@
 			  </plugins>
 		  </build>
 	  </profile>
+	  
+	    <profile>
+		  <id>RegressionSuite</id>
+		  <build>
+			  <plugins>
+				  <plugin>
+					  <groupId>org.apache.Maven.plugins</groupId>
+						<artifactId>maven-surefire-plugin</artifactId>
+						<version>3.2.5</version>
+						<configuration>
+							<suiteXmlFiles>
+								<suiteXmlFile>RegressionSuite.xml</suiteXmlFile>
+							</suiteXmlFiles>
+						</configuration>
+				  </plugin>
+			  </plugins>
+		  </build>
+	  </profile>
+
   </profiles>
   
   
